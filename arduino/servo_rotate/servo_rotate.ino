@@ -47,6 +47,6 @@ int calculateDistance(int pos){
   // distance= duration*0.034/2;
   Serial.print(pos); // position of servo motor
   Serial.print(","); // comma separate variables
-  Serial.println(distance); // print distance in cm
+  Serial.print(distance); // print distance in cm
   Serial.print(".");
 }
