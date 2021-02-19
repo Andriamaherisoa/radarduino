@@ -96,20 +96,6 @@ function draw() {
     drawText();
 }
 
-// socket.on("moving", (val) => { 
-//     // reads the data from the Serial Port up to the character '.' and puts it into the String variable "data".
-//     data = val.substring(0, val.indexOf('.'));
-//     data = data.substring(0, data.length-1);
-    
-//     index1 = data.indexOf(","); // find the character ',' and puts it into the variable "index1"
-//     angle = data.substring(0, index1); // read the data from position "0" to position of the variable index1 or thats the value of the angle the Arduino Board sent into the Serial Port
-//     distance = data.substring(index1+1, data.length); // read the data from position "index1" to the end of the data pr thats the value of the distance
-    
-//     // converts the String variables into Integer
-//     iAngle = Number(angle);
-//     iDistance = Number(distance);           
-//   });
-
 function drawRadar() {
     push();
     translate(960,1000); // moves the starting coordinats to new location
@@ -178,7 +164,7 @@ function drawRadar() {
     text("Angle: " + iAngle +" °", 1050, 1050);
     text("Distance: ", 1380, 1050);
     if(iDistance<40) {
-    text("        " + iDistance +" cm", 1400, 1050);
+      text("                " + iDistance +" cm", 1400, 1050);
     }
     textSize(25);
     fill(98,245,60);
