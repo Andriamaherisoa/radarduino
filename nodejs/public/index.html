@@ -1,0 +1,42 @@
+<html>
+  <head>
+      <style>
+        #bg {  
+            background: radial-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 1));
+            height: 100%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+
+        #radar {
+            background: linear-gradient(#333, #111);
+            box-shadow:
+                0 0 0 1px hsla(0, 0%, 0%, 0.5),
+                inset 0 0 0 1px hsla(0, 0%, 100%, 0.15)
+            ;
+            padding: 14px;
+            border-radius: 100%;
+            display: block;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+        }
+        body {
+            background: radial-gradient(#222, #111);         
+        }
+
+        canvas {
+            background: radial-gradient(#222, #111);         
+            display: block;
+        }
+      </style>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>    
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5.serialserver@0.0.28/lib/p5.serialport.js"></script>
+    <script src="./scripts/radar.js"></script>
+  </head>
+  <body>
+    <main>
+    </main>
+  </body>
+</html>
