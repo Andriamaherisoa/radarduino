@@ -1,0 +1,12 @@
+{
+  "name": "serialtest",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {    
+    "p5.serialserver": "^0.0.29"            
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

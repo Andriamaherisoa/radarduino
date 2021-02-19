@@ -2,7 +2,7 @@
 #include <Servo.h> 
 // Declare the Servo pin 
 int servoPin = 12; 
-int rotationSpeed = 10;
+int rotationSpeed = 30;
 
 const int trigPin = 10;
 const int echoPin = 11;
